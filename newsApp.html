@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>newsApp</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="newsApp.css">
+</head>
+
+<body>
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info bg-gradient">
+      <div class="container justify-content-center">
+        <a class="navbar-brand" href="#">newsApp</a>
+      </div>
+    </nav>
+    <section class="search">
+      <div class="container d-flex justify-content-center">
+        <form name="search" class="row col-4 mt-5 border border-info rounded shadow">
+          <div class="col-12 mt-3">
+            <label for="country" class="form-label">Выберите страну</label>
+            <select class="form-select" aria-label=".form-select-lg example" name="country">
+              <option value="ru" selected>Россия</option>
+              <option value="us">США</option>
+              <option value="ca">Канада</option>
+              <option value="bg">Англия</option>
+              <option value="de">Германия</option>
+              <option value="fr">Франция</option>
+              <option value="cn">Китай</option>
+              <option value="ch">Чехия</option>
+            </select>
+          </div>
+          <div class="col-12 mt-3">
+            <label for="category" class="form-label">Выберите категорию</label>
+            <select class="form-select" aria-label=".form-select-lg example" name="category">
+              <option value="technology" selected>Техника</option>
+              <option value="business">Бизнесс</option>
+              <option value="health">Здоровье</option>
+              <option value="science">Наука</option>
+              <option value="sports">Спорт</option>
+            </select>
+          </div>
+          <div class="col-12 mt-3">
+            <label for="query" class="form-label">Поиск</label>
+            <input type="text" name="query" class="form-control" placeholder="Введите слово или фразу">
+          </div>
+          <div class="col-6 mt-3 mb-3">
+            <button type="submit" class="btn btn-info col-12 btn-search">Поиск</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+
+    <section class="news mt-5">
+      <div class="container">
+        <div class="news__inner d-flex justify-content-evenly flex-wrap">
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+  <script src="newsApp.js"></script>
+</body>
+
+</html>
